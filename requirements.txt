@@ -1,0 +1,16 @@
+torch
+torchvision
+diffusers
+transformers
+accelerate
+xformers
+objaverse
+trimesh[all]
+pyrender
+numpy
+opencv-python
+matplotlib
+tqdm
+pyyaml
+streamlit
+pillow
