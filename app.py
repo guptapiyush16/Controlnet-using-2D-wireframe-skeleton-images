@@ -1,7 +1,6 @@
 import streamlit as st
 import torch
 from PIL import Image
-from src.inference import generate_image
 import os
 
 # --- Page Config ---
@@ -77,6 +76,7 @@ with col2:
                     wireframe_img.save(temp_wireframe_path)
                     
                     # Call inference logic
+                    from src.inference import generate_image
                     # Note: In a production app, we would cache the pipeline to avoid reloading
                     output_img = generate_image(
                         prompt=prompt,

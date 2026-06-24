@@ -22,6 +22,10 @@ def render_wireframe(mesh_path, output_dir, filename_prefix, image_size=(512, 51
             mesh = trimesh.util.concatenate(mesh)
 
     # 1. Generate Wireframe (edges)
+    if not hasattr(mesh, "edges_unique"):
+        print(f"Skipping {filename_prefix}: Object type {type(mesh)} has no edges.")
+        return
+
     edges = mesh.edges_unique
     vertices = mesh.vertices
     
