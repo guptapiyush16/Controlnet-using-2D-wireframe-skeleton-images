@@ -56,8 +56,12 @@ python -m streamlit run app.py --server.port 8501 --server.address localhost
 - **Prompt:** `"a very sexy red car, hot wheels, high quality, 8k"`
 - **Wireframe Input:** `temp_wireframe.png` (2D projected wireframe of a 3D car model)
 
+<img src="temp_wireframe.png" width="400" alt="Input Wireframe">
+
 ### Output
 - **Generated Image:** `output/final_project_demo.png` (Photorealistic rendering adhering to the input structure)
+
+<img src="output/final_project_demo.png" width="400" alt="Generated Output">
 
 ### Evaluation Metrics
 When running the inference pipeline, the model achieved the following hardware and structural metrics on consumer-grade hardware:
