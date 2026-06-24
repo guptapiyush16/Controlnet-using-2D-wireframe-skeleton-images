@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Machine Learning / Data
+data/processed/*
+!data/processed/.gitkeep
+output/*
+!output/final_project_demo.png
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+.cache/
+
+# Presentations / Documents
+*.pptx
+*.ppt
+*.pdf
+
+# OS
+.DS_Store
+Thumbs.db
